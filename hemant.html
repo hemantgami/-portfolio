@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Hemant Gami | Portfolio</title>
+  <!-- Google Fonts & Simple Icons (Feather-like via Lucide CDN) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Georgia:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #1e1e1e;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+    /* custom utilities */
+    .star-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: currentColor;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+    .tear-svg {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .grid-bg {
+      background-image: linear-gradient(#d0d0cc 1px, transparent 1px), linear-gradient(90deg, #d0d0cc 1px, transparent 1px);
+      background-size: 28px 28px;
+      background-color: #f0efea;
+    }
+    .polaroid-shadow {
+      box-shadow: 2px 4px 16px rgba(0,0,0,0.5);
+    }
+    .contact-badge {
+      transition: all 0.2s ease;
+    }
+    .contact-badge:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.05);
+    }
+    @media (max-width: 640px) {
+      .portfolio-title {
+        font-size: 48px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="main-portfolio" style="max-width: 1400px; margin: 0 auto; background-color: #1e1e1e;">
+  
+  <!-- ========== TOP GRID SECTION ========== -->
+  <div style="background-color: #f0efea; position: relative; overflow: hidden;">
+    <div class="grid-bg" style="position: absolute; inset: 0;"></div>
+    
+    <!-- decorative starbursts -->
+    <div style="position: absolute; top: -8px; left: -8px; width: 52px; height: 52px; background-color: #F5A623; clip-path: polygon(50% 5%, 61% 35%, 95% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 5% 35%, 39% 35%); opacity: 0.9;"></div>
+    <div style="position: absolute; top: 20px; right: -6px; width: 44px; height: 44px; background-color: #E8920A; clip-path: polygon(50% 5%, 61% 35%, 95% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 5% 35%, 39% 35%); opacity: 0.8;"></div>
+    <div style="position: absolute; top: 68px; right: 48px; color: #1e1e1e; opacity: 0.7;"><div class="star-icon" style="width:18px; height:18px;"></div></div>
+    
+    <!-- title block -->
+    <div style="position: relative; display: flex; flex-direction: column; align-items: center; padding: 48px 24px 32px 24px;">
+      <div style="margin-bottom: 8px; z-index: 2;">
+        <div style="border: 2px solid #1e1e1e; border-radius: 40px; background-color: #f0efea; font-family: 'Georgia', serif; font-size: 15px; font-weight: 600; letter-spacing: 0.05em; color: #1e1e1e; padding: 2px 18px; line-height: 1.6;">2026</div>
+      </div>
+      <div style="font-family: 'Georgia', 'Times New Roman', serif; font-size: clamp(52px, 14vw, 72px); font-weight: 900; color: #1a1a1a; letter-spacing: -0.02em; line-height: 1; text-align: center;">
+        <span>H</span><span>e</span><span>m</span><span>a</span><span>n</span><span>t</span><span> </span><span>G</span><span>a</span><span>m</span><span>i</span>
+      </div>
+      <p style="margin-top: 12px; font-size: 13px; color: #1e1e1e; letter-spacing: 0.04em; font-weight: 400; text-align: center;">Data Science & AI Engineer&nbsp;<span style="color:#E8920A; font-weight:700;">✦</span>&nbsp;Machine Learning&nbsp;<span style="color:#E8920A; font-weight:700;"></span>&nbsp;Power BI</p>
+    </div>
+  </div>
+  
+  <!-- torn paper edge -->
+  <div style="position: relative; width: 100%; height: 60px; margin-top: -2px; overflow: hidden;">
+    <svg viewBox="0 0 700 60" preserveAspectRatio="none" style="width: 100%; height: 100%;">
+      <path d="M0,0 L0,30 Q10,10 25,28 Q40,46 60,22 Q75,5 95,32 Q115,55 135,20 Q150,0 175,35 Q195,55 215,18 Q235,0 255,30 Q270,50 295,15 Q315,0 335,38 Q355,55 375,20 Q395,0 415,32 Q435,55 455,18 Q475,0 495,35 Q515,55 535,22 Q555,5 575,38 Q595,60 615,25 Q635,5 655,30 Q675,50 700,20 L700,0 Z" fill="#f0efea"/>
+      <path d="M0,30 Q10,10 25,28 Q40,46 60,22 Q75,5 95,32 Q115,55 135,20 Q150,0 175,35 Q195,55 215,18 Q235,0 255,30 Q270,50 295,15 Q315,0 335,38 Q355,55 375,20 Q395,0 415,32 Q435,55 455,18 Q475,0 495,35 Q515,55 535,22 Q555,5 575,38 Q595,60 615,25 Q635,5 655,30 Q675,50 700,20 L700,60 L0,60 Z" fill="#1e1e1e"/>
+    </svg>
+  </div>
+  
+  <!-- ========== DARK SECTION: MAIN CONTENT ========== -->
+  <div style="background-color: #1e1e1e; padding: 48px 28px 80px 28px;">
+    <div style="max-width: 1280px; margin: 0 auto;">
+      
+      <!-- HELLO + PHOTO ROW (dynamic from central data) -->
+      <div id="profileRow" style="display: flex; flex-direction: column; gap: 48px; align-items: flex-start; margin-bottom: 32px;"></div>
+      
+      <!-- EDUCATION + EXPERIENCE + TECH ROW -->
+      <div id="expEduRow" style="display: flex; flex-direction: column; gap: 48px; margin-top: 32px;"></div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  // =========================================================
+  // 🧩 REPLACED WITH HEMANT GAMI'S RESUME DATA (SAME STRUCTURE)
+  // =========================================================
+  const portfolioData = {
+    // Basic identity
+    name: "Hemant Gami",
+    role: "Data Science Student | AI & ML Engineer",
+    summary: "Data Science student with hands-on experience in Python, Machine Learning, and Power BI. Skilled in analyzing data, building predictive models, and creating insightful dashboards to support business decisions. Completed certifications in Cybersecurity and Google Cloud, with active participation in hackathons and collaborative ML/SQL projects.",
+    location: "Indore, India",
+    availability: "Open for internships & opportunities",
+    
+    // Contact & social
+    phone: "+91 7000676037",
+    email: "hemantgami5693@gmail.com",
+    linkedin: "https://www.linkedin.com/in/hemant-gami/",
+    github: "https://github.com/hemantgami",
+    leetcode: "https://leetcode.com/u/hemantgami/",
+    instagram: "https://www.instagram.com/hemantgami/",
+    
+    // Visible names for social links
+    linkedinName: "linkedin_hemantgami",
+    githubName: "github_hemantgami",
+    leetcodeName: "leetcode_hemantgami",
+    instagramName: "instagram_hemantgami",
+    
+    // Photo (professional placeholder - using same style with initials HG)
+    photoUrl: "https://media.licdn.com/dms/image/v2/D4D35AQETv94ddCVMeQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1712427910059?e=1778425200&v=beta&t=QArtuXFYH5P6L2X5p7CnhgaqBXdt_KAaU61dE6s4_sw",
+    
+    // Personal traits (based on resume)
+    personalTraits: ["Critical Thinking", "Time Management", "Leadership", "Positive Discipline", "Problem Solver", "Quick Learner"],
+    
+    // Tech stack based on Skills from resume
+    software: ["Python", "SQL", "Pandas", "NumPy", "Seaborn", "Gradio", "OpenCV", "Machine Learning", "NLP", "Power BI", "MS Excel", "MYSQL", "MongoDB", "GCP", "GitHub"],
+    
+    // Education (from resume: Dual Degree, 12th, 10th)
+    education: [
+      { id: "edu1", degree: "B.Tech-M.Tech (Dual Degree) - Artificial Intelligence and Data Science", institution: "School of Data Science and Forecasting, DAVV University", duration: "2021 – 2026 (CGPA: 8.0/10)" },
+      { id: "edu2", degree: "Class 12th (Physics, Chemistry, Maths + Computer Science - CBSE)", institution: "Jawahar Navodaya Vidyalaya, Ghattia, Ujjain (MP)", duration: "2020 | 92.6%" },
+      { id: "edu3", degree: "Class 10th (CBSE)", institution: "Jawahar Navodaya Vidyalaya, Ghattia, Ujjain (MP)", duration: "2018 | 84.6%" }
+    ],
+    
+    // Projects from resume transformed into Experience/Work style
+    experiences: [
+      {
+        id: "exp1",
+        role: "Sales Analyst AI Agent",
+        company: "Machine Learning Project",
+        responsibilities: [
+          "Applied EDA to clean and analyze the CSV file.",
+          "Generated basic sales report and graphical PDF to visualize sales data.",
+          "Predicted future sales and revenue using machine learning.",
+          "Implemented chatbot interface to ask queries related to the sales data and convert chat into text file."
+        ],
+        link: "#",
+        tech: "Python, ML, Gradio, Seaborn"
+      },
+      {
+        id: "exp2",
+        role: "Automated Offensive Content Detection in Videos",
+        company: "NLP & Computer Vision Project",
+        responsibilities: [
+          "Generated Transcript of video and cleaned it.",
+          "Searched Profanity and offensive Words in dictionary and count them.",
+          "Predicted whether the video is suitable for children or not.",
+          "Predicted IPC section related to the offensive and profanity word used in video."
+        ],
+        link: "#",
+        tech: "Python, MoviePy, Whisper, NLP"
+      },
+      {
+        id: "exp3",
+        role: "Facial Recognition Model",
+        company: "Computer Vision Project",
+        responsibilities: [
+          "Applied the HaarCascade model to analyze and detect facial features.",
+          "Implemented face recognition techniques to enhance data accuracy.",
+          "Conducted comprehensive analysis to identify patterns in facial data."
+        ],
+        link: "#",
+        tech: "Python, Machine Learning, OpenCV"
+      },
+      {
+        id: "exp4",
+        role: "Diwali Sales Data Analysis",
+        company: "Data Analytics Project",
+        responsibilities: [
+          "Analyzed sales performance of various products across different regions.",
+          "Cleaned and updated datasets using Python to ensure data accuracy.",
+          "Identified trends and insights through detailed regional sales analysis."
+        ],
+        link: "#",
+        tech: "Python, EDA, Power BI"
+      }
+    ],
+    
+    // highlights (achievements and certifications from resume)
+    highlights: ["✨ 4+ Major ML/AI Projects", "🚀 Google Cloud Certified", "🎯 Tata Motors Data Science Job Simulation (Forage)", "🏆 National Children Science Congress Winner", "📊 GATE-2025 (DA) Qualified"],
+    
+    // Additional note
+    extraNote: "Available for Data Science & ML opportunities"
+  };
+  
+  // ---------- Helper to render everything dynamically (SAME STRUCTURE) ----------
+  function renderPortfolio() {
+    const data = portfolioData;
+    
+    // 1) Render Profile Row (Hello + Polaroid + contact)
+    const profileRow = document.getElementById("profileRow");
+    if (profileRow) {
+      // initials for placeholder - using same style with HG
+      const imgSrc = data.photoUrl;
+      
+      profileRow.innerHTML = `
+        <!-- Polaroid photo block -->
+        <div style="flex-shrink: 0; width: 400px; max-width: 400px;">
+          <div style="background-color: #ffffff; padding: 6px 6px 30px 6px; transform: rotate(-1.5deg); position: relative;" class="polaroid-shadow">
+            <div style="position: absolute; top: -10px; left: -10px; font-size: 26px; z-index: 10;">🤖</div>
+            <div style="position: absolute; top: -8px; left: 50%; transform: translateX(-50%); width: 36px; height: 14px; background-color: rgba(220,200,150,0.85); border-radius: 2px; z-index: 10;"></div>
+            <div style="position: relative; overflow: hidden; height: 400px; background-color: #E8920A;">
+              <img src="${imgSrc}" alt="${data.name}" style="width: 100%; height: 100%; object-fit: cover;">
+              <div style="position: absolute; bottom: 20px; left: 16px; font-size: 28px;">📊</div>
+              <div style="position: absolute; bottom: 18px; left: 30px; width: 60px; height: 28px; border: 3px solid #ffffff; border-radius: 50%; transform: rotate(-15deg); opacity: 0.85;"></div>
+            </div>
+            <div style="position: absolute; bottom: 6px; right: -6px; font-size: 22px; z-index: 10;">🧠</div>
+            <p style="text-align: center; margin-top: 8px; color: #1a1a1a; font-size: 18px; font-weight: 700; letter-spacing: 0.02em;">${data.name}</p>
+          </div>
+        </div>
+        
+        <!-- Hello & contact section -->
+        <div style="flex: 1; min-width: 0;">
+          <h2 style="font-family: 'Georgia', serif; font-size: 30px; font-weight: 700; color: #ffffff; letter-spacing: 0.01em; margin-bottom: 10px; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px;">Hello !</h2>
+          <p style="font-size: 18px; color: #e0e0e0; line-height: 1.65; margin-bottom: 20px; max-width: auto;">${data.summary}</p>
+          
+          <h3 style="font-family: 'Georgia', serif; font-size: 22px; font-weight: 700; color: #ffffff; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; margin-bottom: 12px;">Contact</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px 20px; max-width: auto;">
+            ${data.phone ? `
+              <div class="contact-badge" style="display: flex; align-items: center; gap: 10px;">
+                <div style="background-color: #25D366; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
+                <span style="font-size: 18px; color: #e0e0e0; font-weight: 500;">${data.phone}</span>
+              </div>
+            ` : ''}
+            ${data.email ? `
+  <a href="mailto:${data.email}" style="text-decoration:none;">
+    <div class="contact-badge" style="display: flex; align-items: center; gap: 10px;">
+      
+      <div style="background-color: #EA4335; width: 28px; height: 28px; border-radius: 4px; display: flex; align-items: center; justify-content: center;">
+        ✉️
+      </div>
+
+      <span style="font-size: 18px; color: #e0e0e0; font-weight: 600;">
+        ${data.email}
+      </span>
+
+    </div>
+  </a>
+` : ''}
+          ${data.linkedin ? `
+  <a href="${data.linkedin}" target="_blank" style="text-decoration:none;">
+    <div class="contact-badge" style="display: flex; align-items: center; gap: 10px;">
+      <div style="background-color: #0077b5; width: 30px; height: 30px; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+        <span style="color:white; font-size:15px; font-weight:bold;">in</span>
+      </div>
+      <span style="font-size: 18px; color: #e0e0e0; font-weight: 600;">
+        ${data.linkedinName}
+      </span>
+    </div>
+  </a>
+` : ''}
+${data.github ? `
+  <a href="${data.github}" target="_blank" style="text-decoration:none;">
+    <div class="contact-badge" style="display: flex; align-items: center; gap: 10px;">
+      <div style="background-color: #333; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+        <span style="color:white; font-size:15px;">🐙</span>
+      </div>
+      <span style="font-size: 18px; color: #e0e0e0; font-weight: 600;">
+        ${data.githubName}
+      </span>
+    </div>
+  </a>
+` : ''}
+
+${data.leetcode ? `
+  <a href="${data.leetcode}" target="_blank" style="text-decoration:none;">
+    <div class="contact-badge" style="display: flex; align-items: center; gap: 10px;">
+      <div style="background-color: #FFA116; width: 30px; height: 30px; border-radius: 6px; display: flex; align-items: center; justify-content: center;">
+        <span style="color:white; font-size:15px;">💻</span>
+      </div>
+      <span style="font-size: 18px; color: #e0e0e0; font-weight: 600;">
+        ${data.leetcodeName}
+      </span>
+    </div>
+  </a>
+` : ''}
+          ${data.instagram ? `
+  <a href="${data.instagram}" target="_blank" style="text-decoration:none;">
+    <div class="contact-badge" style="display: flex; align-items: center; gap: 10px;">
+      <div style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+        📸
+      </div>
+      <span style="font-size: 18px; color: #e0e0e0; font-weight: 600;">
+        ${data.instagramName}
+      </span>
+    </div>
+  </a>
+` : ''}
+          </div>
+        </div>
+      `;
+      
+      // make the row flex on desktop
+      profileRow.style.display = "flex";
+      profileRow.style.flexDirection = window.innerWidth >= 1024 ? "row" : "column";
+      profileRow.style.gap = "40px";
+      profileRow.style.alignItems = "flex-start";
+      window.addEventListener('resize', () => {
+        profileRow.style.flexDirection = window.innerWidth >= 1024 ? "row" : "column";
+      });
+    }
+    
+    // 2) Render Education + Experience + Tech stack (two column layout)
+    const expEduRow = document.getElementById("expEduRow");
+    if (expEduRow) {
+      // Education HTML (with CGPA & percentages)
+      let eduHtml = `<div style="width: 100%; max-width: 420px; flex-shrink: 0;">
+        <h3 style="font-family: 'Georgia', serif; font-size: 22px; font-weight: 800; color: #ffffff; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; margin-bottom: 14px;">Education</h3>`;
+      if (data.education && data.education.length) {
+        data.education.forEach(edu => {
+          eduHtml += `
+            <div style="margin-bottom: 20px;">
+              ${edu.duration ? `<p style="font-size: 20px; color: #D4A017; margin-bottom: 4px; font-weight: 500;">${edu.duration}</p>` : ''}
+              ${edu.institution ? `<p style="font-size: 14px; font-weight: 700; color: #ffffff; line-height: 1.3; margin-bottom: 4px;">${edu.institution}</p>` : ''}
+              ${edu.degree ? `<p style="font-size: 10px; color: #aaaaaa; font-style: italic;">${edu.degree}</p>` : ''}
+            </div>
+          `;
+        });
+      } else {
+        eduHtml += `<p style="font-size: 11px; color: #aaa;">Education details will appear here.</p>`;
+      }
+      
+      // Tech stack (based on resume skills)
+      eduHtml += `<h3 style="font-family: 'Georgia', serif; font-size: 22px; font-weight: 800; color: #ffffff; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; margin: 32px 0 12px 0;">Tech Stack</h3>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">`;
+      if (data.software && data.software.length) {
+        data.software.forEach(tool => {
+          eduHtml += `<span style="border: 1px solid rgba(255,255,255,0.25); border-radius: 999px; padding: 5px 14px; font-size: 13px; color: #e0e0e0; background-color: rgba(255,255,255,0.06); font-weight: 600;">${tool}</span>`;
+        });
+      } else {
+        eduHtml += `<span style="color:#aaa;">Add software/tools in data</span>`;
+      }
+      eduHtml += `</div>`;
+      
+      // Personal traits based on summary
+      eduHtml += `<p style="font-size: 15px; color: #aaaaaa; margin-top: 28px; margin-bottom: 6px; font-weight: 500;">Soft Skills</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">`;
+      if (data.personalTraits && data.personalTraits.length) {
+        data.personalTraits.forEach(trait => {
+          eduHtml += `<span style="border: 1px solid #888888; border-radius: 20px; padding: 3px 12px; font-size: 12px; color: #cccccc; font-style: italic;">${trait}</span>`;
+        });
+      } else {
+        eduHtml += `<span style="color:#aaa;">Add personal traits</span>`;
+      }
+      eduHtml += `</div></div>`;
+      
+      // Experience column (Projects from resume)
+      let expHtml = `<div style="flex: 1; min-width: 0;">
+        <h3 style="font-family: 'Georgia', serif; font-size: 22px; font-weight: 800; color: #ffffff; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; margin-bottom: 20px;">Featured Projects</h3>`;
+      if (data.experiences && data.experiences.length) {
+        data.experiences.forEach(exp => {
+          // highlight project link if any responsibility includes url
+          let respText = exp.responsibilities.join(" • ");
+          expHtml += `
+            <div style="margin-bottom: 28px;">
+              ${exp.tech ? `<p style="font-size: 11px; color: #D4A017; margin-bottom: 4px; font-weight: 500;">🛠️ ${exp.tech}</p>` : ''}
+              ${exp.company ? `<p style="font-size: 15px; font-weight: 700; color: #ffffff; line-height: 1.2; margin-bottom: 4px;">${exp.company}</p>` : ''}
+              ${exp.role ? `<p style="font-size: 11px; color: #bbbbbb; font-style: italic; margin-bottom: 6px;">${exp.role}</p>` : ''}
+              <p style="font-size: 16px; color: #cccccc; line-height: 1.5;">${respText}</p>
+              <a href="${exp.link}" target="_blank" style="color: #F44336; text-decoration: underline;">View Project</a>
+
+            </div>
+          `;
+        });
+      } else {
+        expHtml += `<p style="font-size: 12px; color: #aaa;">Project showcase will appear here.</p>`;
+      }
+      expHtml += `</div>`;
+      
+      expEduRow.innerHTML = `<div style="display: flex; flex-direction: column; gap: 48px; width: 100%;">${eduHtml}${expHtml}</div>`;
+      const innerContainer = expEduRow.firstChild;
+      if (innerContainer) {
+        innerContainer.style.display = "flex";
+        innerContainer.style.flexDirection = window.innerWidth >= 1024 ? "row" : "column";
+        innerContainer.style.gap = "48px";
+        window.addEventListener('resize', () => {
+          if (innerContainer) innerContainer.style.flexDirection = window.innerWidth >= 1024 ? "row" : "column";
+        });
+      }
+    }
+    
+    // Optional: small GSAP fade animation (lightweight)
+    gsap.fromTo(".main-portfolio", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power2.out" });
+    gsap.fromTo("#profileRow > div", { y: 20, opacity: 0 }, { y: 0, opacity: 1, stagger: 0.1, duration: 0.6, delay: 0.2 });
+    gsap.fromTo("#expEduRow", { y: 25, opacity: 0 }, { y: 0, opacity: 1, duration: 0.7, delay: 0.4 });
+  }
+  
+  // Run after page load
+  window.addEventListener("DOMContentLoaded", () => {
+    renderPortfolio();
+  });
+</script>
+</body>
+</html>
